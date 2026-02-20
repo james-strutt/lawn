@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brutalist CSS Overrides for Mapbox */
+@layer base {
+  * {
+    @apply border-black;
+  }
+
+  body {
+    @apply font-sans antialiased bg-white text-black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold uppercase tracking-widest;
+  }
+}
+
+@layer components {
+  /* Brutal Button Base */
+  .btn-brutal {
+    @apply border-brutal border-black bg-white px-6 py-3 font-mono uppercase text-sm font-bold;
+    @apply shadow-brutal transition-all duration-100;
+    @apply hover:shadow-brutal-hover hover:translate-x-[2px] hover:translate-y-[2px];
+    @apply active:shadow-none active:translate-x-[4px] active:translate-y-[4px];
+  }
+
+  .btn-brutal-primary {
+    @apply btn-brutal bg-brand-accent text-white border-brand-accent;
+    box-shadow: 4px 4px 0px 0px #000;
+  }
+
+  .btn-brutal-primary:hover {
+    box-shadow: 2px 2px 0px 0px #000;
+  }
+
+  /* Brutal Input */
+  .input-brutal {
+    @apply border-brutal border-black bg-white px-4 py-3 font-mono text-sm;
+    @apply focus:outline-none focus:ring-0 focus:border-brand-accent;
+    @apply placeholder:text-gray-400 placeholder:uppercase placeholder:text-xs;
+  }
+
+  /* Brutal Card */
+  .card-brutal {
+    @apply border-brutal border-black bg-white shadow-brutal-lg;
+  }
+
+  /* Brutal Badge */
+  .badge-brutal {
+    @apply inline-block border-2 border-black px-3 py-1 font-mono text-xs font-bold uppercase;
+    @apply shadow-brutal-sm;
+  }
+}
+
+@layer utilities {
+  /* Text Shadow for Display Text */
+  .text-shadow-brutal {
+    text-shadow: 3px 3px 0px #000;
+  }
+
+  /* Brutal Grid Lines */
+  .grid-brutal {
+    background-image:
+      linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+      linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+/* Mapbox GL Overrides - Brutalist Style */
+.mapboxgl-ctrl-group {
+  border-radius: 0 !important;
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background: #fff !important;
+}
+
+.mapboxgl-ctrl-group button {
+  border-bottom: 2px solid #000 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 0 !important;
+}
+
+.mapboxgl-ctrl-group button:last-child {
+  border-bottom: none !important;
+}
+
+.mapboxgl-ctrl-group button:hover {
+  background-color: #f2f2f2 !important;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 0 !important;
+  border: 3px solid #000 !important;
+  box-shadow: 6px 6px 0px 0px #000 !important;
+  padding: 0 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+  min-width: 300px;
+}
+
+.mapboxgl-popup-tip {
+  display: none !important;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 24px !important;
+  padding: 8px 12px !important;
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  background-color: #f2f2f2 !important;
+  color: #000 !important;
+}
+
+/* Geocoder Overrides */
+.mapboxgl-ctrl-geocoder {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  border-radius: 0 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+  min-width: 400px !important;
+}
+
+.mapboxgl-ctrl-geocoder input {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 14px !important;
+  padding: 12px !important;
+}
+
+.mapboxgl-ctrl-geocoder--suggestion {
+  font-family: 'IBM Plex Mono', monospace !important;
+  border-bottom: 2px solid #e5e5e5 !important;
+  padding: 12px !important;
+}
+
+.mapboxgl-ctrl-geocoder--suggestion:hover {
+  background-color: #f2f2f2 !important;
+}
+
+/* Draw Controls */
+.mapbox-gl-draw_ctrl-draw-btn {
+  border-radius: 0 !important;
+  border: 2px solid #000 !important;
+}
+
+/* Loading States */
+@keyframes brutal-pulse {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+}
+
+.loading-brutal {
+  animation: brutal-pulse 0.5s ease-in-out infinite;
+}

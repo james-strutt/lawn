@@ -31,8 +31,8 @@ describe('BrutalButton', () => {
   it('applies correct size classes', () => {
     render(<BrutalButton size="sm">Small</BrutalButton>);
     const button = screen.getByText('Small');
-    expect(button).toHaveClass('px-4');
-    expect(button).toHaveClass('py-2');
+    expect(button).toHaveClass('sm:px-4');
+    expect(button).toHaveClass('sm:py-2');
   });
 
   it('calls onClick when clicked', () => {
@@ -52,6 +52,6 @@ describe('BrutalButton', () => {
   it('applies brutalist shadow classes', () => {
     render(<BrutalButton>Shadow</BrutalButton>);
     const button = screen.getByText('Shadow');
-    expect(button).toHaveClass('shadow-brutal');
+    expect(button).toHaveClass('sm:shadow-brutal');
   });
 });

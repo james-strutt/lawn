@@ -21,30 +21,30 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 py-8 sm:py-20">
           <div className="text-center">
             {/* Animated Logo */}
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-6 sm:mb-8">
               <AnimatedLawnLogo size="lg" autoPlay={true} loop={true} duration={2} />
             </div>
 
             {/* Tagline */}
-            <h1 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold uppercase tracking-wide sm:tracking-widest mb-4">
+            <h1 className="font-display text-xl sm:text-3xl md:text-5xl font-bold uppercase tracking-normal sm:tracking-wide md:tracking-widest mb-3 sm:mb-4">
               Level the Playing Field.
               <br />
               Take Back Your Turf.
             </h1>
 
-            <p className="font-sans text-lg sm:text-xl text-gray-700 mb-8 sm:mb-12 max-w-2xl mx-auto">
+            <p className="font-sans text-base sm:text-xl text-gray-700 mb-6 sm:mb-12 max-w-2xl mx-auto px-1">
               Whether you're looking to buy or rent, a house or apartment,
               Lawn brings the power of analysis and AI to your fingertips.
             </p>
 
             {/* Search Bar */}
-            <div className="max-w-2xl mx-auto mb-8">
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="max-w-2xl mx-auto mb-6 sm:mb-8">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
                 <BrutalInput
-                  placeholder="ENTER ANY NSW ADDRESS TO START..."
+                  placeholder="ENTER ANY NSW ADDRESS..."
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleExplore()}
@@ -57,7 +57,7 @@ export default function LandingPage() {
             </div>
 
             {/* Free Trial Badge */}
-            <BrutalBadge variant="accent" className="text-xs sm:text-base px-3 sm:px-6 py-2 sm:py-3">
+            <BrutalBadge variant="accent" className="text-[10px] sm:text-base px-2 sm:px-6 py-1.5 sm:py-3">
               14 DAY FREE TRIAL — NO CARD REQUIRED
             </BrutalBadge>
           </div>
@@ -65,13 +65,13 @@ export default function LandingPage() {
       </section>
 
       {/* Every Number Exposed */}
-      <section className="py-12 sm:py-20 bg-surface-secondary border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-4xl font-bold uppercase text-center mb-8 sm:mb-12">
+      <section className="py-8 sm:py-20 bg-surface-secondary border-b-brutal border-black overflow-hidden">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6">
+          <h2 className="font-display text-lg sm:text-4xl font-bold uppercase text-center mb-6 sm:mb-12">
             Every Number. Exposed.
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             <BrutalCard header="STAMP DUTY" headerBg="black">
               <BrutalMetric label="TOTAL" value="$33,490" />
               <div className="mt-4 space-y-2 font-mono text-sm">
@@ -147,8 +147,8 @@ export default function LandingPage() {
       </section>
 
       {/* Three Pathways */}
-      <section className="py-12 sm:py-20 bg-white border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <section className="py-8 sm:py-20 bg-white border-b-brutal border-black overflow-hidden">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <BrutalCard header="FIRST HOME" headerBg="accent">
               <h3 className="font-display text-2xl font-bold mb-4">"WHAT CAN I AFFORD?"</h3>
@@ -194,18 +194,18 @@ export default function LandingPage() {
       </section>
 
       {/* Trust Section */}
-      <section className="py-12 sm:py-20 bg-surface-secondary border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="font-display text-2xl sm:text-4xl font-bold uppercase mb-8">
+      <section className="py-8 sm:py-20 bg-surface-secondary border-b-brutal border-black overflow-hidden">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 text-center">
+          <h2 className="font-display text-lg sm:text-4xl font-bold uppercase mb-6 sm:mb-8">
             Built on Government Data. Not Guesswork.
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-6 sm:mb-8">
             {['NSW SPATIAL SERVICES', 'REVENUE NSW', 'TRANSPORT NSW', 'PLANNING PORTAL'].map(
               (source) => (
                 <div
                   key={source}
-                  className="border-brutal border-black bg-white p-4 shadow-brutal font-mono text-xs font-bold"
+                  className="border-2 sm:border-brutal border-black bg-white p-2 sm:p-4 shadow-brutal-sm sm:shadow-brutal font-mono text-[10px] sm:text-xs font-bold"
                 >
                   {source}
                 </div>
@@ -222,9 +222,9 @@ export default function LandingPage() {
       </section>
 
       {/* Footer CTA */}
-      <section className="py-12 sm:py-20 bg-brand-dark text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="font-display text-2xl sm:text-4xl font-bold uppercase mb-8">
+      <section className="py-8 sm:py-20 bg-brand-dark text-white overflow-hidden">
+        <div className="max-w-4xl mx-auto px-3 sm:px-6 text-center">
+          <h2 className="font-display text-lg sm:text-4xl font-bold uppercase mb-6 sm:mb-8">
             Stop Guessing. Start Knowing.
           </h2>
 
@@ -247,13 +247,13 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t-brutal border-black bg-white py-8">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <footer className="border-t-brutal border-black bg-white py-6 sm:py-8">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="font-mono text-sm mb-4 md:mb-0">
+            <div className="font-mono text-xs sm:text-sm mb-4 md:mb-0">
               LAWN | About | Privacy | Terms | Contact
             </div>
-            <div className="font-mono text-sm text-gray-600">
+            <div className="font-mono text-xs sm:text-sm text-gray-600">
               © 2026 Lawn. Built in Sydney.
             </div>
           </div>

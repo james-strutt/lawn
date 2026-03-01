@@ -266,10 +266,10 @@ export default function PropertySearch() {
   return (
     <div ref={containerRef} className="relative">
       {/* Tabs */}
-      <div className="flex mb-2">
+      <div className="flex mb-1 sm:mb-2">
         <button
           onClick={() => handleTabChange('address')}
-          className={`flex-1 px-4 py-2 font-mono text-xs uppercase font-bold tracking-wider border-2 border-black transition-colors ${
+          className={`flex-1 px-2 sm:px-4 py-1.5 sm:py-2 font-mono text-[10px] sm:text-xs uppercase font-bold tracking-normal sm:tracking-wider border-2 border-black transition-colors ${
             searchMode === 'address'
               ? 'bg-black text-white'
               : 'bg-white text-black hover:bg-surface-secondary'
@@ -279,7 +279,7 @@ export default function PropertySearch() {
         </button>
         <button
           onClick={() => handleTabChange('lot')}
-          className={`flex-1 px-4 py-2 font-mono text-xs uppercase font-bold tracking-wider border-2 border-l-0 border-black transition-colors ${
+          className={`flex-1 px-2 sm:px-4 py-1.5 sm:py-2 font-mono text-[10px] sm:text-xs uppercase font-bold tracking-normal sm:tracking-wider border-2 border-l-0 border-black transition-colors ${
             searchMode === 'lot'
               ? 'bg-black text-white'
               : 'bg-white text-black hover:bg-surface-secondary'

@@ -6,12 +6,12 @@ export default function TopNav() {
   const { isAuthenticated, user } = useUserStore();
 
   return (
-    <nav className="border-b-brutal border-black bg-white sticky top-0 z-50 shadow-brutal-sm">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6">
-        <div className="flex items-center justify-between h-16">
+    <nav className="border-b-2 sm:border-b-brutal border-black bg-white sticky top-0 z-50 shadow-none sm:shadow-brutal-sm">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6">
+        <div className="flex items-center justify-between h-12 sm:h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="font-display text-xl sm:text-2xl font-bold tracking-wide sm:tracking-widest">
+            <div className="font-display text-lg sm:text-2xl font-bold tracking-normal sm:tracking-widest">
               LAWN
             </div>
           </Link>
@@ -57,7 +57,7 @@ export default function TopNav() {
               </>
             ) : (
               <>
-                <button className="font-mono text-sm uppercase font-medium hover:text-brand-accent transition-colors">
+                <button className="font-mono text-xs sm:text-sm uppercase font-medium hover:text-brand-accent transition-colors">
                   Sign In
                 </button>
                 <BrutalButton variant="primary" size="sm">

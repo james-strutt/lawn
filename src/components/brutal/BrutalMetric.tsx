@@ -25,14 +25,14 @@ export default function BrutalMetric({
 
   return (
     <div className={cn('flex flex-col', className)} {...props}>
-      <div className="font-mono text-xs uppercase text-gray-600 tracking-wider mb-1">
+      <div className="font-mono text-[10px] sm:text-xs uppercase text-gray-600 tracking-wider mb-1">
         {label}
       </div>
-      <div className={cn('font-mono text-2xl font-bold', valueColorClasses[variant])}>
+      <div className={cn('font-mono text-xl sm:text-2xl font-bold', valueColorClasses[variant])}>
         {value}
       </div>
       {detail && (
-        <div className="font-mono text-xs text-gray-500 mt-1">
+        <div className="font-mono text-[10px] sm:text-xs text-gray-500 mt-1">
           {detail}
         </div>
       )}

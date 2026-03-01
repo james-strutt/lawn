@@ -21,18 +21,18 @@ export default function BrutalCard({
 
   return (
     <div
-      className={cn('border-brutal border-black bg-white shadow-brutal-lg', className)}
+      className={cn('border-2 sm:border-brutal border-black bg-white shadow-brutal-sm sm:shadow-brutal-lg', className)}
       {...props}
     >
       {header && (
         <div className={cn(
-          'px-4 py-3 font-mono uppercase text-xs font-bold tracking-wider',
+          'px-3 sm:px-4 py-2 sm:py-3 font-mono uppercase text-[10px] sm:text-xs font-bold tracking-wider',
           headerBgClasses[headerBg]
         )}>
           {header}
         </div>
       )}
-      <div className="p-4">
+      <div className="p-3 sm:p-4">
         {children}
       </div>
     </div>

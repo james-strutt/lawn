@@ -117,7 +117,7 @@ export default function BottomSheet() {
   return (
     <div
       ref={sheetRef}
-      className="absolute bottom-0 left-0 right-0 z-30 bg-white border-t-4 border-black flex flex-col transition-all duration-300 ease-out"
+      className="absolute bottom-0 left-0 right-0 z-30 bg-white border-t-2 sm:border-t-4 border-black flex flex-col transition-all duration-300 ease-out"
       style={{ height: SHEET_HEIGHTS[sheetState] }}
     >
       {/* Drag Handle */}

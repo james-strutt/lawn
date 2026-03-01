@@ -32,7 +32,7 @@ export default function RentVsBuyVerdictCard({ verdict, confidence, reasoning }:
     <div className="border-brutal border-black shadow-brutal overflow-hidden">
       {/* Verdict Badge */}
       <div className={cn('px-6 py-4 text-center', config.bgClass, config.textClass)}>
-        <div className="font-display text-2xl font-bold uppercase tracking-widest">
+        <div className="font-display text-xl sm:text-2xl font-bold uppercase tracking-wide sm:tracking-widest">
           {config.label}
         </div>
         <div className="font-mono text-xs mt-1 opacity-80 uppercase">

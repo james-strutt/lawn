@@ -122,8 +122,8 @@ export default function AnimatedLawnLogo({
 
   const sizes = {
     sm: { box: 'w-32 h-16', scale: 0.5 },
-    md: { box: 'w-64 h-32', scale: 1 },
-    lg: { box: 'w-96 h-48', scale: 1.5 },
+    md: { box: 'w-48 sm:w-64 h-24 sm:h-32', scale: 1 },
+    lg: { box: 'w-56 sm:w-80 md:w-96 h-28 sm:h-40 md:h-48', scale: 1.5 },
   };
 
   return (

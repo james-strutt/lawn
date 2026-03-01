@@ -18,7 +18,7 @@ export default function PropertyDetails() {
   };
 
   return (
-    <div className="absolute top-28 left-4 right-4 sm:right-auto sm:w-96 z-20">
+    <div className="absolute top-20 sm:top-28 left-2 right-2 sm:left-4 sm:right-auto sm:w-96 z-20">
       <BrutalCard header="PROPERTY DETAILS">
         {/* Close Button */}
         <button
@@ -33,7 +33,7 @@ export default function PropertyDetails() {
           <div className="font-mono text-xs uppercase text-gray-600 mb-1">
             Address
           </div>
-          <div className="font-sans text-lg font-medium">
+          <div className="font-sans text-sm sm:text-lg font-medium">
             {selectedProperty.address}
           </div>
         </div>

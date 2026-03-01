@@ -11,7 +11,7 @@ export default function PropertyComparison() {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-30 bg-white border-t-brutal border-black shadow-brutal-lg p-3 sm:p-6">
+    <div className="fixed bottom-0 left-0 right-0 z-30 bg-white border-t-2 sm:border-t-brutal border-black shadow-brutal-sm sm:shadow-brutal-lg p-2 sm:p-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-3 sm:mb-4">
           <h3 className="font-display text-base sm:text-xl font-bold uppercase">
@@ -24,7 +24,7 @@ export default function PropertyComparison() {
 
         <div className="flex gap-3 overflow-x-auto pb-2 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 sm:gap-4 sm:overflow-x-visible sm:pb-0">
           {comparisonProperties.map((property) => (
-            <BrutalCard key={property.id} header="" className="min-w-[200px] sm:min-w-0">
+            <BrutalCard key={property.id} header="" className="min-w-[160px] sm:min-w-0">
               {/* Remove Button */}
               <button
                 onClick={() => removeFromComparison(property.id)}

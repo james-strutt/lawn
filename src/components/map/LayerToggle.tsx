@@ -39,7 +39,7 @@ export default function LayerToggle() {
 
       {/* Dropdown Panel */}
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-80 bg-white border-brutal border-black shadow-brutal-lg z-50">
+        <div className="absolute top-full right-0 mt-2 w-[calc(100vw-2rem)] sm:w-80 bg-white border-brutal border-black shadow-brutal-lg z-50">
           {/* Header */}
           <div className="bg-black text-white px-4 py-3 font-mono text-xs font-bold uppercase flex items-center justify-between">
             <span>Map Layers</span>

@@ -17,7 +17,7 @@ export default function BottomSheetTabs() {
         <button
           key={tab.id}
           onClick={() => setActiveTab(tab.id)}
-          className={`flex-1 px-3 py-2 font-mono text-xs uppercase font-bold tracking-wider transition-colors ${
+          className={`flex-1 px-1.5 sm:px-3 py-2 font-mono text-[10px] sm:text-xs uppercase font-bold tracking-normal sm:tracking-wider transition-colors ${
             activeTab === tab.id
               ? 'bg-black text-white'
               : 'bg-white text-black hover:bg-surface-secondary'

@@ -21,7 +21,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-6 py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
           <div className="text-center">
             {/* Animated Logo */}
             <div className="flex justify-center mb-8">
@@ -29,20 +29,20 @@ export default function LandingPage() {
             </div>
 
             {/* Tagline */}
-            <h1 className="font-display text-3xl md:text-5xl font-bold uppercase tracking-widest mb-4">
+            <h1 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold uppercase tracking-wide sm:tracking-widest mb-4">
               Level the Playing Field.
               <br />
               Take Back Your Turf.
             </h1>
 
-            <p className="font-sans text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
+            <p className="font-sans text-lg sm:text-xl text-gray-700 mb-8 sm:mb-12 max-w-2xl mx-auto">
               Whether you're looking to buy or rent, a house or apartment,
               Lawn brings the power of analysis and AI to your fingertips.
             </p>
 
             {/* Search Bar */}
             <div className="max-w-2xl mx-auto mb-8">
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <BrutalInput
                   placeholder="ENTER ANY NSW ADDRESS TO START..."
                   value={address}
@@ -57,7 +57,7 @@ export default function LandingPage() {
             </div>
 
             {/* Free Trial Badge */}
-            <BrutalBadge variant="accent" className="text-base px-6 py-3">
+            <BrutalBadge variant="accent" className="text-xs sm:text-base px-3 sm:px-6 py-2 sm:py-3">
               14 DAY FREE TRIAL — NO CARD REQUIRED
             </BrutalBadge>
           </div>
@@ -65,9 +65,9 @@ export default function LandingPage() {
       </section>
 
       {/* Every Number Exposed */}
-      <section className="py-20 bg-surface-secondary border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-display text-4xl font-bold uppercase text-center mb-12">
+      <section className="py-12 sm:py-20 bg-surface-secondary border-b-brutal border-black">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-4xl font-bold uppercase text-center mb-8 sm:mb-12">
             Every Number. Exposed.
           </h2>
 
@@ -147,8 +147,8 @@ export default function LandingPage() {
       </section>
 
       {/* Three Pathways */}
-      <section className="py-20 bg-white border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-white border-b-brutal border-black">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <BrutalCard header="FIRST HOME" headerBg="accent">
               <h3 className="font-display text-2xl font-bold mb-4">"WHAT CAN I AFFORD?"</h3>
@@ -194,9 +194,9 @@ export default function LandingPage() {
       </section>
 
       {/* Trust Section */}
-      <section className="py-20 bg-surface-secondary border-b-brutal border-black">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="font-display text-4xl font-bold uppercase mb-8">
+      <section className="py-12 sm:py-20 bg-surface-secondary border-b-brutal border-black">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="font-display text-2xl sm:text-4xl font-bold uppercase mb-8">
             Built on Government Data. Not Guesswork.
           </h2>
 
@@ -222,14 +222,14 @@ export default function LandingPage() {
       </section>
 
       {/* Footer CTA */}
-      <section className="py-20 bg-brand-dark text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-display text-4xl font-bold uppercase mb-8">
+      <section className="py-12 sm:py-20 bg-brand-dark text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="font-display text-2xl sm:text-4xl font-bold uppercase mb-8">
             Stop Guessing. Start Knowing.
           </h2>
 
           <div className="max-w-xl mx-auto mb-6">
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <BrutalInput
                 placeholder="ENTER YOUR EMAIL TO START..."
                 className="flex-1 bg-white"
@@ -248,7 +248,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t-brutal border-black bg-white py-8">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="font-mono text-sm mb-4 md:mb-0">
               LAWN | About | Privacy | Terms | Contact

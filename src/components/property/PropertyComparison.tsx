@@ -11,20 +11,20 @@ export default function PropertyComparison() {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-30 bg-white border-t-brutal border-black shadow-brutal-lg p-6">
+    <div className="fixed bottom-0 left-0 right-0 z-30 bg-white border-t-brutal border-black shadow-brutal-lg p-3 sm:p-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="font-display text-xl font-bold uppercase">
-            Property Comparison ({comparisonProperties.length}/5)
+        <div className="flex items-center justify-between mb-3 sm:mb-4">
+          <h3 className="font-display text-base sm:text-xl font-bold uppercase">
+            Compare ({comparisonProperties.length}/5)
           </h3>
           <BrutalButton onClick={clearComparison} size="sm">
             Clear All
           </BrutalButton>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="flex gap-3 overflow-x-auto pb-2 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 sm:gap-4 sm:overflow-x-visible sm:pb-0">
           {comparisonProperties.map((property) => (
-            <BrutalCard key={property.id} header="">
+            <BrutalCard key={property.id} header="" className="min-w-[200px] sm:min-w-0">
               {/* Remove Button */}
               <button
                 onClick={() => removeFromComparison(property.id)}

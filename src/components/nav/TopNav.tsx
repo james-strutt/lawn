@@ -7,11 +7,11 @@ export default function TopNav() {
 
   return (
     <nav className="border-b-brutal border-black bg-white sticky top-0 z-50 shadow-brutal-sm">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="font-display text-2xl font-bold tracking-widest">
+            <div className="font-display text-xl sm:text-2xl font-bold tracking-wide sm:tracking-widest">
               LAWN
             </div>
           </Link>
@@ -47,10 +47,10 @@ export default function TopNav() {
           </div>
 
           {/* CTA */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4 min-w-0">
             {isAuthenticated ? (
               <>
-                <span className="font-mono text-xs uppercase text-gray-600">
+                <span className="hidden sm:inline font-mono text-xs uppercase text-gray-600 truncate max-w-[150px]">
                   {user.email}
                 </span>
                 <BrutalButton size="sm">Settings</BrutalButton>
@@ -61,7 +61,8 @@ export default function TopNav() {
                   Sign In
                 </button>
                 <BrutalButton variant="primary" size="sm">
-                  Start Free Trial
+                  <span className="hidden sm:inline">Start Free Trial</span>
+                  <span className="sm:hidden">Start</span>
                 </BrutalButton>
               </>
             )}

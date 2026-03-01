@@ -45,7 +45,7 @@ export default function DetailedMode() {
         reasoning={quickResult.reasoning}
       />
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="border-2 border-black p-3">
           <div className="font-mono text-xs uppercase font-bold tracking-wider mb-2 text-center">
             Buy Position
@@ -111,7 +111,7 @@ export default function DetailedMode() {
             <button
               key={tab.id}
               onClick={() => setActiveResultTab(tab.id)}
-              className={`flex-1 px-3 py-2 font-mono text-xs uppercase font-bold tracking-wider transition-colors ${
+              className={`flex-1 px-1.5 sm:px-3 py-2 font-mono text-[10px] sm:text-xs uppercase font-bold tracking-normal sm:tracking-wider transition-colors ${
                 activeResultTab === tab.id
                   ? 'bg-white text-black'
                   : 'bg-black text-white hover:bg-gray-800'

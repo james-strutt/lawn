@@ -55,7 +55,7 @@ export default function QuickMode() {
       </div>
 
       {/* Read-only auto-filled */}
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         <div>
           <div className="font-mono text-[10px] uppercase text-gray-500 mb-1">Property Value</div>
           <div className="font-mono text-sm font-bold">{formatCurrency(propertyValue)}</div>

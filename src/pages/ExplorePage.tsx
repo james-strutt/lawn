@@ -34,7 +34,7 @@ export default function ExplorePage() {
         <MapContainer />
 
         {/* Search Bar (top left) */}
-        <div className="absolute top-4 left-4 w-96 z-20">
+        <div className="absolute top-4 left-4 right-4 sm:right-auto sm:w-96 z-20">
           <PropertySearch />
         </div>
 

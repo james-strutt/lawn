@@ -18,7 +18,7 @@ export default function PropertyDetails() {
   };
 
   return (
-    <div className="absolute top-28 left-4 w-96 z-20">
+    <div className="absolute top-28 left-4 right-4 sm:right-auto sm:w-96 z-20">
       <BrutalCard header="PROPERTY DETAILS">
         {/* Close Button */}
         <button

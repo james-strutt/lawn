@@ -5,8 +5,8 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-surface-secondary">
       <TopNav />
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <h1 className="font-display text-4xl font-bold uppercase text-center mb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <h1 className="font-display text-2xl sm:text-4xl font-bold uppercase text-center mb-8 sm:mb-12">
           Honest Pricing. Obviously.
         </h1>
 
